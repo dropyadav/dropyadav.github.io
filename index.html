@@ -51,7 +51,27 @@
   </div>
 </header>
 
-<div class="wrap hero" style="display:flex; gap:32px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 32px;
+  align-items:start;
+}
+
+.hero-photo{
+  width:140px;
+  height:180px;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+}
+
+@media (max-width: 768px){
+  .hero-grid{
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+  }
+}
 
   <div>
     <h1 class="name">Dr. Om Prakash Yadav</h1>
