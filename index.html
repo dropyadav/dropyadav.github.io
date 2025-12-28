@@ -50,29 +50,7 @@
     </nav>
   </div>
 </header>
-
-.hero-grid{
-  display:grid;
-  grid-template-columns: 1fr auto;
-  column-gap: 32px;
-  align-items:start;
-}
-
-.hero-photo{
-  width:140px;
-  height:180px;
-  object-fit:cover;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-
-@media (max-width: 768px){
-  .hero-grid{
-    grid-template-columns: 1fr;
-    row-gap: 16px;
-  }
-}
-
+<div class="wrap hero hero-grid">
   <div>
     <h1 class="name">Dr. Om Prakash Yadav</h1>
     <p class="subtitle">Assistant Professor,</p>
@@ -81,12 +59,10 @@
     <p class="meta">Email: <a href="mailto:opyadav@nith.ac.in">opyadav@nith.ac.in</a></p>
   </div>
 
-  <img src="profile.jpeg"
-       alt="Dr. Om Prakash Yadav"
-       style="width:150px; height:160px; object-fit:cover;
-              border-radius:12px; border:1px solid #e5e7eb;">
+  <img class="hero-photo"
+       src="profile.jpeg"
+       alt="Dr. Om Prakash Yadav">
 </div>
-
 
 <main class="wrap">
 
